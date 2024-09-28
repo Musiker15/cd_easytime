@@ -39,11 +39,16 @@ function Notification(source, notif_type, message)
             end
 
         elseif Config.NotificationType.client == 'chat' then
-                TriggerClientEvent('chatMessage', source, message)
+            TriggerClientEvent('chatMessage', source, message)
 
         elseif Config.NotificationType.client == 'other' then
             --add your own notification.
 
+            if IsDuplicityVersion() then
+                exports.msk_core:Notification(source, 'Wetter', message, notif_type == 1 and 'success' or notif_type == 2 and 'info' or notif_type == 3 and 'error', 5000)
+            else
+                exports.msk_core:Notification('Wetter', message, notif_type == 1 and 'success' or notif_type == 2 and 'info' or notif_type == 3 and 'error', 5000)
+            end
         end
     end
 end

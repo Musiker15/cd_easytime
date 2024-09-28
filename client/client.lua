@@ -8,13 +8,10 @@
 
 ESX, QBCore = nil, nil
 
-Citizen.CreateThread(function()
+CreateThread(function()
     if Config.Framework == 'esx' then
         while ESX == nil do
-            TriggerEvent(Config.FrameworkTriggers.main, function(obj) ESX = obj end)
-            if ESX == nil then
-                ESX = exports[Config.FrameworkTriggers.resource_name]:getSharedObject()
-            end
+            ESX = exports[Config.FrameworkTriggers.resource_name]:getSharedObject()
             Wait(100)
         end
 
