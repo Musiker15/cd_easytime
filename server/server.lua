@@ -349,7 +349,8 @@ function PermissionsCheck(source)
         for c, d in ipairs(Config.Command.Perms[Config.Framework]) do
             for cc, dd in ipairs(GetPlayerIdentifiers(source)) do
                 if string.lower(dd) == string.lower(d) then
-                return true
+                    return true
+                end
             end
         end
     elseif Config.Framework == 'other' then
