@@ -30,7 +30,7 @@ https://www.youtube.com/watch?v=-7SMZLyZWcY
 
 ## Fork / Edits
 
-This software is a Fork and was originally made by @dsheedes and was now edited by @Musiker15
+This software is a Fork and was originally made by [@dsheedes](https://github.com/dsheedes/cd_easytime) and was now edited by [@Musiker15](https://github.com/Musiker15)
 
 * Changed a few things for compatibility with other scripts
 * Added Realtime *[experimental]*
