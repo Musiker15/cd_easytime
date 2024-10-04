@@ -27,3 +27,10 @@ It is possible that Easytime conflicts with other time and weather scripts such 
 ## Preview
 
 https://www.youtube.com/watch?v=-7SMZLyZWcY
+
+## Fork / Edits
+
+This software is a Fork and was originally made by @dsheedes and was now edited by @Musiker15
+
+* Changed a few things for compatibility with other scripts
+* Added Realtime *[experimental]*
